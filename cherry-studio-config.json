@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "douban-search": {
+      "command": "npx",
+      "args": ["douban-mcp-server"],
+      "env": {
+        "NODE_ENV": "production",
+        "REQUEST_TIMEOUT": "10000",
+        "MAX_RETRIES": "3"
+      }
+    }
+  }
+} 

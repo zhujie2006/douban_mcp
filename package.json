@@ -1,0 +1,41 @@
+{
+  "name": "douban-mcp-server",
+  "version": "1.0.0",
+  "description": "豆瓣影视搜索 MCP Server - 为 AI 模型提供影视信息查询能力",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "douban-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "node test.js",
+    "test:browser": "npx tsx test-browser.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "mcp",
+    "douban",
+    "movie",
+    "search",
+    "ai",
+    "tools"
+  ],
+  "author": "AI探趣星船长",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.19.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 
